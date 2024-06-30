@@ -16,6 +16,7 @@ public class Demo extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        System.out.println(Thread.currentThread().getName());
         System.out.println("Hello Get Method");
     }
 
